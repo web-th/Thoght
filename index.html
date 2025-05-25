@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="google-site-verification" content="your-verification-code-here">
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thought of the Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thought of the Day</h1>
+    <p id="thought"></p>
+  </div>
+
+  <script>
+    const thoughts = [
+      "Believe you can and you're halfway there.",
+      "Every day is a second chance.",
+      "Dream big. Start small. Act now.",
+      "Stay positive, work hard, make it happen.",
+      "Be the reason someone smiles today.",
+      "The best way out is always through.",
+      "Doubt kills more dreams than failure ever will.",
+      "Push yourself, because no one else is going to do it for you.",
+      "Success is what happens after you've survived all your mistakes.",
+      "It always seems impossible until it's done.",
+      "Make each day your masterpiece.",
+      "Don't wait. The time will never be just right.",
+      "Start where you are. Use what you have. Do what you can.",
+      "You are capable of amazing things.",
+      "Keep your face always toward the sunshine--and shadows will fall behind you.",
+      "Work hard in silence. Let success make the noise.",
+      "Don't count the days, make the days count.",
+      "Failure is the condiment that gives success its flavor.",
+      "Great things never come from comfort zones.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "Do something today that your future self will thank you for.",
+      "You don't have to be perfect to be amazing.",
+      "You miss 100% of the shots you don't take.",
+      "Turn your wounds into wisdom.",
+      "Don't be pushed by your problems. Be led by your dreams.",
+      "Difficult roads often lead to beautiful destinations.",
+      "Happiness is not by chance, but by choice.",
+      "Opportunities don't happen. You create them.",
+      "The only way to do great work is to love what you do.",
+      "Success doesn't come from what you do occasionally. It comes from what you do consistently.",
+      "You are braver than you believe, stronger than you seem, and smarter than you think.",
+      "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.",
+      "Act as if what you do makes a difference. It does.",
+      "Sometimes we're tested not to show our weaknesses, but to discover our strengths.",
+      "Little by little, a little becomes a lot.",
+      "The key to success is to focus on goals, not obstacles.",
+      "Believe in yourself and all that you are.",
+      "Don't limit your challenges. Challenge your limits.",
+      "Success is walking from failure to failure with no loss of enthusiasm.",
+      "Do it with passion, or not at all.",
+      "Stay away from people who try to belittle your ambitions.",
+      "Work hard. Stay humble.",
+      "Your limitation--it's only your imagination.",
+      "Push harder than yesterday if you want a different tomorrow.",
+      "Don't watch the clock; do what it does. Keep going.",
+      "Sometimes later becomes never. Do it now.",
+      "Dream it. Wish it. Do it.",
+      "Don't stop when you're tired. Stop when you're done.",
+      "Great things never come from comfort zones.",
+      "Success doesn't just find you. You have to go out and get it.",
+      "The harder you work for something, the greater you'll feel when you achieve it.",
+      "Dream bigger. Do bigger.",
+      "Don't wait for opportunity. Create it.",
+      "Wake up with determination. Go to bed with satisfaction.",
+      "Do something today that your future self will thank you for.",
+      "Little things make big days.",
+      "It's going to be hard, but hard does not mean impossible.",
+      "Don't limit your challenges. Challenge your limits.",
+      "Sometimes we're tested not to show our weaknesses, but to discover our strengths.",
+      "The key to success is to focus on goals, not obstacles.",
+      "Success is what comes after you stop making excuses.",
+      "If you can dream it, you can do it.",
+      "The only limit to our realization of tomorrow is our doubts of today.",
+      "Never let the fear of striking out keep you from playing the game.",
+      "Doubt kills more dreams than failure ever will.",
+      "Strive not to be a success, but rather to be of value.",
+      "A goal without a plan is just a wish.",
+      "Motivation is what gets you started. Habit is what keeps you going.",
+      "Start where you are. Use what you have. Do what you can.",
+      "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+      "To live a creative life, we must lose our fear of being wrong.",
+      "The harder the conflict, the greater the triumph.",
+      "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+      "The only way to achieve the impossible is to believe it is possible.",
+      "Success is the sum of small efforts repeated day in and day out.",
+      "Perseverance is failing 19 times and succeeding the 20th.",
+      "You don't have to see the whole staircase, just take the first step.",
+      "If everything was perfect, you would never learn and you would never grow.",
+      "Strength doesn't come from what you can do. It comes from overcoming the things you thought you couldn't.",
+      "No one is perfect -- that's why pencils have erasers.",
+      "Hardships often prepare ordinary people for an extraordinary destiny.",
+      "Courage doesn't always roar. Sometimes courage is the quiet voice at the end of the day saying, 'I will try again tomorrow.'"
+    ];
+
+    const today = new Date();
+    const index = today.getDate() % thoughts.length;
+    document.getElementById("thought").innerText = thoughts[index];
+  </script>
+</body>
+</html>
